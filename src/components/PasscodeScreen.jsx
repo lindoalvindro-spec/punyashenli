@@ -16,8 +16,8 @@ export default function PasscodeScreen({ onUnlock }) {
   const [errorMsg, setErrorMsg] = useState('');
   const [sparks, setSparks] = useState([]);
   
-  const CORRECT_PIN = '190826';
-  const PIN_LENGTH = 6;
+  const CORRECT_PIN = '09092005';
+  const PIN_LENGTH = 8;
 
   const bgParticles = Array.from({ length: 14 }).map((_, i) => ({
     id: i,
@@ -114,7 +114,7 @@ export default function PasscodeScreen({ onUnlock }) {
   };
 
   const verifyPin = (enteredPin) => {
-    if (enteredPin === CORRECT_PIN || enteredPin === '190826' || enteredPin === '1908' || enteredPin === '1308' || enteredPin === '1234') {
+    if (enteredPin === CORRECT_PIN || enteredPin === '09092005' || enteredPin === '090905' || enteredPin === '0909') {
       const tl = gsap.timeline();
       
       tl.to(dotsRef.current, {
@@ -290,7 +290,7 @@ export default function PasscodeScreen({ onUnlock }) {
               letterSpacing: '0.5px',
             }}
           >
-            For You, Lucyna
+            For You, Shelli
           </h2>
           <p
             className="neon-text-subtle"
@@ -311,33 +311,33 @@ export default function PasscodeScreen({ onUnlock }) {
               marginTop: '4px',
             }}
           >
-            Clue: 190826 ❤️
+            Clue: 09092005 ❤️
           </p>
         </div>
 
-        {/* Upgraded 6-PIN Dots Container */}
+        {/* Upgraded 8-PIN Dots Container */}
         <div
           ref={dotsRef}
           style={{
             display: 'flex',
-            gap: '10px',
+            gap: '8px',
             marginBottom: '18px',
-            padding: '8px 16px',
+            padding: '8px 12px',
             background: 'rgba(2, 8, 20, 0.65)',
             borderRadius: '20px',
             border: '1px solid rgba(96, 165, 250, 0.3)',
             boxShadow: 'inset 0 0 8px rgba(0,0,0,0.5), 0 0 12px rgba(0,210,255,0.15)',
           }}
         >
-          {Array.from({ length: 6 }).map((_, idx) => {
+          {Array.from({ length: PIN_LENGTH }).map((_, idx) => {
             const isFilled = idx < pin.length;
             return (
               <div
                 key={idx}
                 style={{
                   position: 'relative',
-                  width: '14px',
-                  height: '14px',
+                  width: '12px',
+                  height: '12px',
                   borderRadius: '50%',
                   border: isFilled ? '1.5px solid #ffffff' : '1.5px solid rgba(96, 165, 250, 0.5)',
                   background: isFilled

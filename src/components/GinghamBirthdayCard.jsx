@@ -164,7 +164,7 @@ export default function GinghamBirthdayCard() {
           Interactive Gift Card 🎁
         </h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-          Tap the card to open Lucyna's birthday surprise ✨
+          Tap the card to open Shelli's birthday surprise ✨
         </p>
       </div>
 
@@ -224,16 +224,16 @@ export default function GinghamBirthdayCard() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                 <Sparkles size={18} color="#b4001e" />
                 <span style={{ fontSize: '0.82rem', fontWeight: '700', letterSpacing: '1px', color: '#b4001e' }}>
-                  A SPECIAL MESSAGE FOR LUCYNA MAJEWSKA
+                  A SPECIAL MESSAGE FOR SHELLI 🤍
                 </span>
               </div>
 
-              <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#73000b', marginBottom: '8px' }}>
-                Happy Birthday, Moje Kochanie! 🎂✨
+              <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#73000b', marginBottom: '8px' }}>
+                Happy 21st Birthday, Sayang! 🎂✨
               </h4>
 
-              <p style={{ fontSize: '0.85rem', lineHeight: '1.55', color: '#590008', fontWeight: '500' }}>
-                You bring so much light, elegance, and warmth into my world. Wishing you a year filled with boundless happiness, radiant health, and the fulfillment of your greatest dreams! 💕
+              <p style={{ fontSize: '0.82rem', lineHeight: '1.5', color: '#590008', fontWeight: '500' }}>
+                selamatt ulangg tahunn sayangg!! semogaa dengann bertambahnyaa umurr kamuu yang ke-21 ini, kamuu bisaa menjadii yangg lebihh baikk lagii, sehatt mentall maupunn fisikk, dii lancarkann rezekinyaa, dii permudahh segalaa urusannyaa... tetapp menjadii perempuan yangg ndaa pernahh berubahh darii awall hinggaa akhirr yahh. semangatt dalamm berprosesnyaa cantikk! 💕
               </p>
             </div>
 
@@ -331,8 +331,8 @@ export default function GinghamBirthdayCard() {
                 }}
               >
                 <img
-                  src="/lucyna 1.jpeg"
-                  alt="Lucyna Majewska"
+                  src="/sheli 1.jpeg"
+                  alt="Shelli"
                   style={{
                     width: '100%',
                     height: '100%',

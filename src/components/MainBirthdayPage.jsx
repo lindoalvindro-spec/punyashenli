@@ -17,15 +17,15 @@ function LetterTypewriter() {
   const [displayedLines, setDisplayedLines] = useState([]);
 
   const letterLines = [
-    { text: "Happy Birthday, Lucyna ❤️", style: "greeting" },
+    { text: "selamatt ulangg tahunn sayangg!! ❤️ (21st Birthday)", style: "greeting" },
     { text: "", style: "spacer" },
-    { text: "On this special day, I want to wish you good health, genuine happiness, peace of mind, and the fulfilment of every dream and ambition you pursue.", style: "body" },
+    { text: "semogaa dengann bertambahnyaa umurr kamuu yang ke-21 ini, kamuu bisaa menjadii yangg lebihh baikk lagii, sehatt mentall maupunn fisikk, dii lancarkann rezekinyaa, dii permudahh segalaa urusannyaa.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Thank you for being such a wonderful and meaningful part of my life. Your kindness, your laughter, and all the little moments we share mean more to me than I could ever put into words. I may not be able to give you the world right now, but I hope these heartfelt words bring a little smile to your face today.", style: "body" },
+    { text: "semogaa tujuann kitaa berduaa cepatt tercapaiii dann terimakasihh telahh memberikuu cintaa yangg belumm pernahh akuu temuii sebelumnyaa, tetapp menjadii perempuan yangg ndaa pernahh berubahh darii awall hinggaa akhirr yahh.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "May our journey continue to grow with warmth, care, and inspiration, always encouraging and supporting each other to become the best versions of ourselves.", style: "body" },
+    { text: "semangatt dalamm berprosesnyaa cantikk, ingatt menyerahh bukanlahh solusii ketikaa kamuu merasaa lelahh, tetapp jadii orangg baikk yahh meskipunn orangg orangg belumm tentuu memandangg baikk, akuu tetapp mendo'akann dann selaluu supportt usahaa kamuu.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Happy birthday, my dearest. I hope the year ahead brings you everything beautiful that you deserve.", style: "ps" },
+    { text: "ingatt selaluu kataa kataa akuu jangann melakukann hall anehh meskipunn akuu jauhh dann tidakk mengetahuii ituu, sekalii lagii happy birthdaayy sayanggkuu!! 🤍", style: "ps" },
   ];
 
   // Trigger typewriter when scrolled into view
@@ -186,7 +186,7 @@ function LetterTypewriter() {
             }}
           >
             <span style={{ color: '#60a5fa', fontSize: '0.85rem' }}>With all my love,</span><br />
-            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#38bdf8', textShadow: '0 0 10px rgba(56,189,248,0.5)' }}>Haikal</span>
+            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#38bdf8', textShadow: '0 0 10px rgba(56,189,248,0.5)' }}>Selalu Untukmu 🤍</span>
           </div>
         )}
       </div>
@@ -313,8 +313,8 @@ function FarewellSection({ onOpenCake }) {
           fontWeight: '400',
         }}
       >
-        Happy Birthday, Lucyna Majewska ❤️<br /><br />
-        May your year ahead be filled with genuine happiness, good health, and success in everything you do. I’m truly grateful to be able to celebrate you today, even though we’re miles apart. Distance may keep us from celebrating side by side, but it could never make this day feel any less special to me
+        Happy Birthday, Shelli ❤️ (21st Birthday)<br /><br />
+        selamatt ulangg tahunn sayangg!! Semogaa di umur kamu yang ke-21 ini, kamuu selaluu sehatt mentall maupunn fisikk, dii lancarkann rezekinyaa, dii permudahh segalaa urusannyaa, dan tujuann kitaa berduaa cepatt tercapaiii. Terimakasihh telahh memberikuu cintaa yangg belumm pernahh akuu temuii sebelumnyaa. Sekalii lagii happy birthdaayy sayanggkuu!! 🤍
       </p>
 
       {/* Center Flower Bucket PNG Ornament */}
@@ -449,7 +449,7 @@ function PersonalMessageCard() {
             fontFamily: 'var(--font-body)',
           }}
         >
-          "I truly cherish your presence and all the thoughtful warmth you bring into my world. Your kindness, intelligence, grace, and courage have such a wonderful way of inspiring me every day. I hope my presence brings as much comfort, happiness, and warmth to your life as yours brings to mine"
+          "tetapp jadii orangg baikk yahh meskipunn orangg orangg belumm tentuu memandangg baikk, akuu tetapp mendo'akann dann selaluu supportt usahaa kamuu. ingatt selaluu kataa kataa akuu jangann melakukann hall anehh meskipunn akuu jauhh dann tidakk mengetahuii ituu, dan ingatt menyerahh bukanlahh solusii ketikaa kamuu merasaa lelahh. semangatt dalamm berprosesnyaa cantikk 🤍"
         </p>
       </div>
     </div>
@@ -550,24 +550,32 @@ export default function MainBirthdayPage() {
     }
   };
 
-  // 3. Polaroid Lightbox Modal State - Photos for Lucyna Majewska
+  // 3. Polaroid Lightbox Modal State - Photos for Shelli
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const photoGallery = [
     { 
       id: 1, 
-      title: 'Lucyna Majewska ✨', 
-      date: 'Special Celebration', 
+      title: 'Shelli ✨ (21st Birthday)', 
+      date: '09 September 2005 · 21 Tahun', 
       location: 'Cherished Moment',
-      img: '/lucyna 1.jpeg',
+      img: '/sheli 1.jpeg',
       rotation: '-2deg'
     },
     { 
       id: 2, 
-      title: 'Forever in my heart 🌍', 
+      title: 'Forever in my heart 🤍', 
       date: 'Miles Apart, But Our Hearts Close 💕', 
       location: '',
-      img: '/lucyna 2.jpeg',
+      img: '/sheli 2.jpeg',
       rotation: '2.5deg'
+    },
+    { 
+      id: 3, 
+      title: 'Cantikku 🌸', 
+      date: 'Happy Birthday Sayang', 
+      location: '',
+      img: '/sheli 3.jpeg',
+      rotation: '-1.5deg'
     },
   ];
 
@@ -575,10 +583,11 @@ export default function MainBirthdayPage() {
   const jarRef = useRef(null);
   const [selectedNote, setSelectedNote] = useState(null);
   const jarNotes = [
-    "Every conversation with you leaves a lasting warmth that brightens my entire day. Thank you for being such an amazing person. 💙",
-    "I admire your intelligence, your gentle strength, and the grace with which you carry yourself. 🤍",
-    "You make the world feel softer, kinder, and so much more beautiful just by being in it. ✨",
-    "Thank you for being someone truly unforgettable. Wishing you all the love and happiness in the world. 🌸"
+    "semangatt dalamm berprosesnyaa cantikk, ingatt menyerahh bukanlahh solusii ketikaa kamuu merasaa lelahh. Kamu hebat! 🌸",
+    "terimakasihh telahh memberikuu cintaa yangg belumm pernahh akuu temuii sebelumnyaa. Kamu sangat berarti bagiku 💙",
+    "tetapp jadii orangg baikk yahh meskipunn orangg orangg belumm tentuu memandangg baikk, akuu selaluu mendo'akann dan supportt kamuu 🤍",
+    "semogaa tujuann kitaa berduaa cepatt tercapaiii. Happy 21st Birthday sayanggkuu! ✨",
+    "tetapp menjadii perempuan yangg ndaa pernahh berubahh darii awall hinggaa akhirr yahh. I love you! 💕"
   ];
 
   // 5. Final Birthday Cake Modal State
@@ -918,7 +927,7 @@ export default function MainBirthdayPage() {
           <span>🤍</span>
         </div>
 
-        {/* Title: Happy Birthday, My Dearest 🤍 Lucyna Majewska */}
+        {/* Title: Happy Birthday, Sayangku 🤍 Shelli */}
         <div
           style={{
             fontFamily: 'var(--font-display)',
@@ -954,7 +963,7 @@ export default function MainBirthdayPage() {
               letterSpacing: '0.5px',
             }}
           >
-            Moje Kochanie ❤️
+            Sayangku ❤️
           </div>
           <div
             ref={agaaRef}
@@ -966,7 +975,7 @@ export default function MainBirthdayPage() {
               textShadow: '0 0 20px rgba(255, 255, 255, 0.6)',
             }}
           >
-            Lucyna Majewska
+            Shelli (21st)
           </div>
         </div>
 
@@ -1029,7 +1038,7 @@ export default function MainBirthdayPage() {
             marginBottom: '28px',
           }}
         >
-          WISHING YOU THE HAPPIEST BIRTHDAY 🤍
+          WISHING SHELLI THE HAPPIEST 21ST BIRTHDAY 🤍
         </div>
 
         {/* Scroll Down Bounce Arrow */}
@@ -1614,7 +1623,7 @@ export default function MainBirthdayPage() {
                 zIndex: 5,
               }}
             >
-              📜 A SPECIAL NOTE FOR LUCYNA MAJEWSKA 💙
+              📜 A SPECIAL NOTE FOR SHELLI 💙
             </div>
 
             <p style={{ marginTop: '4px', fontFamily: 'var(--font-body)' }}>
@@ -1746,10 +1755,10 @@ export default function MainBirthdayPage() {
           >
             <div style={{ fontSize: '3rem', marginBottom: '10px' }}>💖</div>
             <h3 className="neon-text" style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '8px' }}>
-              Happy Birthday, Lucyna!
+              Happy 21st Birthday, Shelli! 🎂
             </h3>
             <p style={{ fontSize: '0.9rem', color: '#e0f2fe', marginBottom: '20px' }}>
-              Wishing the wonderful Lucyna Majewska a magical year ahead 💗
+              Wishing the wonderful Shelli a magical 21st year ahead filled with happiness & love 💗
             </p>
 
             <button
